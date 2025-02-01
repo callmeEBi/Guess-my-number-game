@@ -17,7 +17,7 @@ checkBtn.addEventListener("click", function () {
   if (userNumber === myNumber) {
     qBox.textContent = myNumber;
     $.body.style.backgroundColor = "green";
-    status.textContent = "Yup";
+    status.textContent = "Correct. Finally!";
     if (highScore < currentScore) {
       highScore = currentScore;
       sp_highScore.textContent = highScore;
