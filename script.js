@@ -1,3 +1,5 @@
+//TODO - refactor this shit, later...
+
 "use strict";
 let $ = document;
 let checkBtn = $.querySelector(".check_btn");
@@ -23,12 +25,18 @@ checkBtn.addEventListener("click", function () {
       sp_highScore.textContent = highScore;
       numEntry.disabled = true;
     }
+    return;
   } else if (userNumber > myNumber) {
     status.textContent = "too high";
     scoreNum.textContent = --currentScore;
   } else {
     status.textContent = "too low";
     scoreNum.textContent = --currentScore;
+  }
+  if (currentScore === 0) {
+    numEntry.disabled = true;
+    status.textContent = "You lost the game";
+    $.body.style.backgroundColor = "red";
   }
   console.log(myNumber);
 });
