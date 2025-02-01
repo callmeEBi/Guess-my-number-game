@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Press Start 2P";
+  background-color: #2c2b2c;
+}
+
+.top_bar {
+  display: flex;
+  margin-top: 23px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.again_box {
+  width: 170px;
+  height: 70px;
+  display: grid;
+  place-content: center;
+}
+.gray {
+  color: hsl(300, 1%, 85%);
+}
+.bg-gray {
+  background: #dad9da;
+}
+
+.guess {
+  margin-top: 50px;
+  font-size: 3rem;
+  display: grid;
+  place-content: center;
+}
+.line {
+  height: 10px;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qbox {
+  display: inline-block;
+  height: 110px;
+  width: 170px;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  color: #2c2b2c;
+}
+
+.bottom_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  padding: 0 166px;
+}
+
+#num-entry {
+  width: 190px;
+  height: 90px;
+  font-family: "Press Start 2P";
+  text-align: center;
+  font-size: 2.1rem;
+  background-color: #2c2b2c;
+  border: 5px solid white;
+  color: #dad9da;
+}
+.bottom_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.check_btn {
+  display: grid;
+  place-content: center;
+  margin-top: 20px;
+  width: 160px;
+  height: 60px;
+}
+.btn {
+  transition: all 0.2s;
+  user-select: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsl(300, 1%, 80%);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+.score {
+  margin-top: 60px;
+}
+.high_score {
+  margin-top: 10px;
+}
